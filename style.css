@@ -1,0 +1,145 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Hiragino Kaku Gothic Pro", Meiryo, sans-serif;
+  height: 100%;
+}
+
+.nav {
+  background-color: #666;
+}
+
+.nav ul {
+  margin: 0;
+  display: flex;
+  list-style: none;
+  height: 50px;
+}
+
+.nav a {
+  display: block;
+  padding: 12px 20px 0px 0px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: #aaa;
+}
+
+.hero {
+  background-image: url("https://picsum.photos/1000/300");
+  background-size: cover;
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero_msg {
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  text-align: center;
+}
+
+.content {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer {
+  background-color: #666;
+  height: 60px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: smaller;
+  position: sticky;
+  top: 100vh;
+}
+
+/* Contact */
+
+.form_group {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.form_group label {
+  width: 30%;
+  font-size: smaller;
+}
+
+.form_group input,
+textarea {
+  width: 60%;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.btn_submit {
+  margin-top: 15px;
+  padding: 5px 15px;
+  background-color: lightseagreen;
+  color: #fff;
+  border-radius: 5px;
+  border: 0;
+}
+
+.btn_submit:hover {
+  background-color: darkcyan;
+}
+
+.form_error {
+  padding-left: 30%;
+  font-size: small;
+  color: red;
+  padding-top: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 640px) {
+  .nav {
+    background-color: darkblue;
+  }
+
+  .footer {
+    background-color: darkblue;
+  }
+
+  .form_group {
+    margin-top: 15px;
+  }
+
+  .form_group label {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+
+  .form_group input,
+  textarea {
+    width: 100%;
+  }
+
+  .btn_submit {
+    width: 100%;
+    height: 40px;
+  }
+
+  .form_error {
+    padding-left: 0%;
+  }
+}

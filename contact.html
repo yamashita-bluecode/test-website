@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Page</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="content">
+        <h2>お問合せ</h2>
+        <form>
+          <div class="form_group">
+            <label>お名前</label>
+            <input type="text" id="name" />
+            <span class="form_error hidden" id="name_error">お名前は必須です。</span>
+          </div>
+          <div class="form_group">
+            <label>Email</label>
+            <input type="text" id="email" />
+            <span class="form_error hidden" id="email_error">Emailは必須です。</span>
+          </div>
+          <div class="form_group">
+            <label>お問合せ内容</label>
+            <textarea id="body" rows="4"></textarea>
+            <span class="form_error hidden" id="body_error">お問合せ内容は必須です。</span>
+          </div>
+          <button class="btn_submit" id="btn_submit">送信</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      &copy; 2024 bluecode inc. All Rights Reserved.
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
